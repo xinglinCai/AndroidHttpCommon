@@ -37,4 +37,13 @@ public class HttpBaseRequest {
         httpURLConnection.disconnect();
     }
 
+    public String getHeaderField(String key) {
+        return httpURLConnection.getHeaderField(key);
+    }
+
+    public void setRequestProperty(String key, String value) {
+        httpURLConnection.setRequestProperty(key, value);
+
+    }
+
 }
